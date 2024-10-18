@@ -149,7 +149,7 @@ header{
 #container .box{
     background-color: #7CB2EC;
     box-shadow: 0px 0px 2px black;
-    height: 190px;
+    height: 390px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -265,7 +265,6 @@ footer{
   color: white;
   align-content: center;
   justify-content: center;
-  width: 100%;
 }
 .footer{
     position: relative;
@@ -343,7 +342,8 @@ footer{
         gap: 40px;
         width: 100%;
     }
-
+     
+    
     .humidity, .air{
         flex-direction: column;
         gap: 5px;
