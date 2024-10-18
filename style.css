@@ -173,7 +173,7 @@ header{
 }
 
 .name{
-    color: white;
+    color: #343434;
     font-size: 30px;
     background-color: #7CB2EC;
     padding: 20px;
@@ -181,13 +181,12 @@ header{
     width: 90%;
     text-transform: uppercase;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;    
-}
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 
 
 #wrapper p{
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .image{
@@ -195,7 +194,7 @@ header{
     }
 
 #wrapper p{
-    color: white;
+    color: #343434;
 }
 
 
@@ -204,7 +203,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #343434;
     align-items: start;
 }
 
@@ -218,7 +217,7 @@ header{
 
 #weatherdetail h3,span{
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 
@@ -240,7 +239,10 @@ header{
 
 
 .section2{
-    height: 500px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -250,6 +252,24 @@ header{
     font-size: 50px;
     text-align: center;
     padding: 40px;
+}
+
+.section2 p{
+    width: 90%;
+}
+
+
+footer{
+  height: 50px;
+  background-color: #343434;
+  color: white;
+  align-content: center;
+}
+.footer{
+    position: relative;
+    height: 10px;
+    bottom: 0px;
+    text-align: center;
 }
 
 
@@ -281,7 +301,7 @@ header{
     }
     
     .searchbar input.active {
-        width: 400px; /* Expanded width when active */
+        width: 300px; /* Expanded width when active */
         opacity: 1; /* Visible when active */
     }
     
