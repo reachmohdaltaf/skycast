@@ -311,8 +311,7 @@ footer{
     }
     
     .searchbar input.active {
-        min-width: 100px;
-        max-width: 200px; /* Expanded width when active */
+        min-width: 150px;
         opacity: 1; /* Visible when active */
     }
     
