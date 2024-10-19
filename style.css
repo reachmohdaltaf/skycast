@@ -228,9 +228,7 @@ header{
     max-width: 90%;
 }
 
-.humi{
-    filter: invert(100%);
-}
+
 
 #weatherdetail{
     display: flex;
@@ -359,6 +357,7 @@ footer{
 
     #image1{
         height: 150px;
+        
     }
      
     
