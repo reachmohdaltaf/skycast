@@ -21,11 +21,16 @@ const humid = document.getElementById("humid");
 async function checkWeather(city) {
   const api_key = "e5708a84eab866cd2eb9f08daf2f4be3";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
+  
 
   try {
     const response = await fetch(url);
-    const weather = await response.json(); // Corrected here
+    if(!response.ok){
+        throw new Error(`Unable to Fetch the info ${response.status}`);
+    }
+    const weather = await response.json();
     console.log(weather);
+   
 
     tempreature.innerText = weather.main.temp;
     description.innerText = weather.weather[0].description;
