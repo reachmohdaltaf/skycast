@@ -29,8 +29,8 @@ const humid = document.getElementById("humid")
 
 
 async function checkWeather(city){
-        // const api_key = "e5708a84eab866cd2eb9f08daf2f4be3"
-        // const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
+        const api_key = "e5708a84eab866cd2eb9f08daf2f4be3"
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
 
     try {
         const response = await fetch(url);
