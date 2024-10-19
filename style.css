@@ -257,7 +257,16 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-  .logo {
+  
+
+
+
+
+ header{
+    height: 80px;
+ }
+ 
+    .logo {
     font-size: 10px;
   }
   .searchbar input {
@@ -281,7 +290,7 @@ footer {
   }
 
   .container {
-    height: 800px;
+    height: 450px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -316,7 +325,7 @@ footer {
   }
 
   #image1 {
-    height: 150px;
+    height: 100px;
   }
 
   #weatherdetail h3,
