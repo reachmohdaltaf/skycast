@@ -56,7 +56,8 @@ header {
   padding: 10px;
   background: #4e54c8;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1px);   color: black;
+  backdrop-filter: blur(1px);
+  color: black;
   border: none;
   border-radius: 10px;
   transition: 0.2s ease;
@@ -128,6 +129,9 @@ header {
   gap: 20px;
 }
 
+.box{
+  width: 40%;
+}
 
 .container .box {
   background: rgba(255, 255, 255, 0.05);
@@ -135,14 +139,12 @@ header {
   backdrop-filter: blur(1px);
   border-radius: 10px;
   display: flex;
-  width: 90%;
   height: 350px;
   flex-direction: column;
   padding: 30px;
-
 }
 
-.card{
+.card {
   display: flex;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -154,17 +156,15 @@ header {
   flex-direction: column;
   gap: 50px;
   color: white;
-
-
 }
 
-.card h1{
+.card h1 {
   color: #fff;
   width: 100%;
   font-size: 40px;
 }
 
-.card p{
+.card p {
   width: 100%;
 }
 
@@ -176,10 +176,12 @@ header {
   align-items: center;
   padding: 10px;
 }
-#image1{
+
+#image1 {
   filter: invert(100%);
 }
-.name{
+
+.name {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
@@ -191,9 +193,7 @@ header {
   font-size: 30px;
 }
 
-
-
-.skycast{
+.skycast {
   display: flex;
   color: white;
   gap: 10px;
@@ -204,12 +204,10 @@ header {
   margin-top: 10px;
 }
 
-.temp{
+.temp {
   display: flex;
   gap: 10px;
 }
-
-
 
 #weatherdetail {
   display: flex;
@@ -234,7 +232,6 @@ header {
   gap: 10px;
 }
 
-
 footer {
   margin-top: 50px;
   height: 50px;
@@ -250,20 +247,24 @@ footer {
     height: 80px;
   }
 
-  .section2{
+  .section2 {
     margin-top: 100px;
   }
-  
+
   .searchbar input {
     padding: 14px;
-    width: 250px;
+    width: 50px;
     opacity: 0;
-    transition:  0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 
-  .searchbar .fa{
+  .searchbar .fa {
     position: absolute;
     width: 50px;
+  }
+
+  .box{
+    width: 100%;
   }
 
   .searchbar input.active {
@@ -276,7 +277,8 @@ footer {
     height: 450px;
     flex-direction: column;
   }
-  .card{
+
+  .card {
     height: auto;
   }
 
@@ -284,8 +286,65 @@ footer {
     display: none;
   }
 
-
-  .hide{
+  .hide {
     display: none;
+  }
+}
+
+/* Media query for screens smaller than 300px */
+@media only screen and (max-width: 300px) {
+  header {
+    height: 60px;
+  }
+
+  .box{
+    width: 500px;
+  }
+
+  
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .searchbar input {
+    width: 200px;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .searchbar .fa {
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .temp {
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  footer {
+    font-size: 12px;
   }
 }
