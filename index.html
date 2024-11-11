@@ -20,7 +20,7 @@
 
             <div class="searchbar">
                 <form action="" id="myform">
-                    <input type="text" name="" id="inputbox" placeholder="search here..">
+                    <input type="text" name="" id="inputbox" style="color: white;" placeholder="search location..">
                     <button type="submit" id="searchbutton" class="fa fa-search "></button>
             </div>
             </form>
@@ -40,15 +40,7 @@
 
 
     <main>
-        <div id="namecontainer">
-
-
-            <div class="name" id="name">
-                <div>
-                    <i class="fa fa-map-marker">...</i>
-                </div>
-
-                </div>
+       
 
               
                 
@@ -62,24 +54,45 @@
         <div id="container" class="container">
             
             <div id="wrapper" class="box">
+                <div class="name">
+                   <h1><p class="name"></p></h1>
+                   </div>
 
-                <img src="./assets/1.png" id="image1" height="200px" alt="">
-               
-                <p class="temperature" id="temperature">0<sup>°C</sup></p>
+               <div class="skycast">
+                <img src="./assets/1.png" id="image1" height="100%" alt="">
+                <p class="temperature" id="temperature">0</p><span>°C</span> 
+
+               <div class="temp">
                 <p class="description" id="description"></p>
+               </div>
+               </div>
+               <div class="skycast">
+                <img src="./assets/time.png" id="image1" height="100%" alt="">
+               
+                <p class="timezone"></p><span>:TimeZone</span>
+               </div>
+               <div class="skycast">
+                <img src="./assets/location.png" id="image1" height="100%" alt="">
+               
+                <p class="long"></p>-<span class="lat"></span><span class="hide">:longitude and latitude</span>
+               </div>
 
 
             </div>
             <div id="weatherdetail" class="box">
                 <div class="humidity">
-                    <img height="100px"  src="./assets/humidity.png" class="humi" alt="">
+                   <div class="skycast">
+                    <img height="50px" id="image1" style="height: 100%;"  src="./assets/humidity.png" class="humi" alt="">
                     <h3 id="windspeed">
                     </h3><span>Humidity</span>
+                   </div>
                 </div>
 
                 <div class="air">
-                    <img height="100px" src="./assets/image.png" class="humi" alt="">
+                   <div class="skycast">
+                    <img height="50px" id="image1"  src="./assets/image.png" class="humi" alt="">
                     <h3 id="humid"></h3> <span>Wind Speed</span>
+                   </div>
                 </div>
 
 
@@ -89,12 +102,21 @@
 
 
         <section class="section2">
-             <h1>Provide You World Wide <br> Weather Forcast</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita provident veniam architecto qui quisquam fugit vitae inventore voluptate sit nemo numquam ipsa, culpa explicabo magni exercitationem quasi magnam quibusdam sed. Minima officiis voluptas consectetur numquam ipsa voluptate quidem sit, alias dolorum fugit magnam laborum quo est soluta vero at quos blanditiis repellendus eum. Minus consequuntur nesciunt, illum est impedit voluptas praesentium ullam! Corrupti ea fugiat quia. Non, ratione? Nisi doloribus iste dolorum, minus ex totam. Corrupti, a. Doloribus voluptate ullam nihil, asperiores amet quasi voluptatem exercitationem sed ipsa hic, eius nesciunt perferendis aspernatur odio, mollitia corrupti incidunt sint obcaecati.</p>
-
-             <h1>Discover the weather in <br> Every city you go</h1>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste expedita provident veniam architecto qui quisquam fugit vitae inventore voluptate sit nemo numquam ipsa, culpa explicabo magni exercitationem quasi magnam quibusdam sed. Minima officiis voluptas consectetur numquam ipsa voluptate quidem sit, alias dolorum fugit magnam laborum quo est soluta vero at quos blanditiis repellendus eum. Minus consequuntur nesciunt, illum est impedit voluptas praesentium ullam! Corrupti ea fugiat quia. Non, ratione? Nisi doloribus iste dolorum, minus ex totam. Corrupti, a. Doloribus voluptate ullam nihil, asperiores amet quasi voluptatem exercitationem sed ipsa hic, eius nesciunt perferendis aspernatur odio, mollitia corrupti incidunt sint obcaecati.
-             </p>
+            <div class="card">
+                <h1>Provide You World Wide Weather Forecast</h1>
+                <p>SkyCast offers a reliable and comprehensive global weather forecasting service, designed to keep you informed and prepared no matter where you are. Whether you're checking the weather for your daily commute, planning an outdoor event, or preparing for a trip abroad, SkyCast provides accurate, real-time weather updates that include temperature, humidity, wind speed, and precipitation details. Our forecasts are updated constantly, ensuring you always receive the latest information to make decisions confidently. With SkyCast, you’ll never be caught off guard by sudden weather changes, and you’ll have the peace of mind to navigate through any day, rain or shine.</p>
+            </div>
+            
+            <div class="card">
+                <h1>Discover the Weather in Every City You Go</h1>
+                <p>Planning a trip? Curious about the weather in a faraway city? With SkyCast, discovering the weather in any city around the world is simple and quick. Enter the city you’re interested in, and SkyCast instantly provides you with a detailed forecast, covering not only the current weather but also predicted conditions for upcoming hours and days. Our city-specific weather insights give you a clear view of what to expect, helping you plan your activities and make arrangements accordingly. Whether it's sunny, rainy, or snowy, knowing the weather ahead of time means you can pack appropriately, plan with confidence, and make the most out of every journey, regardless of the weather.</p>
+            </div>
+            
+            <div class="card">
+                <h1>Track Your Favorite Locations with Ease</h1>
+                <p>Stay connected to the places you care about most with SkyCast’s location tracking feature. By adding your favorite locations, you can easily check the weather in multiple places with a single click. This feature is perfect for anyone who wants to stay informed about the weather at home, work, or frequent travel destinations. SkyCast allows you to personalize your weather experience, so you always have quick access to updates on the places that matter to you. Whether it's keeping tabs on the weather for family members living in different cities or planning a visit to your favorite vacation spot, SkyCast brings convenience and precision to your fingertips, letting you stay prepared no matter where life takes you.</p>
+            </div>
+            
         </section>
     </main>
 

@@ -13,6 +13,11 @@ const wrapper = document.getElementById("wrapper");
 const weatherimage = document.getElementById("image1");
 
 const tempreature = document.getElementById("temperature");
+const timeZone = document.querySelector(".timezone");
+const long = document.querySelector(".long")
+const lat = document.querySelector(".lat")
+
+
 
 const description = document.getElementById("description");
 const wind = document.getElementById("windspeed");
@@ -21,7 +26,6 @@ const humid = document.getElementById("humid");
 async function checkWeather(city) {
   const api_key = "e5708a84eab866cd2eb9f08daf2f4be3";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
-  
 
   try {
     const response = await fetch(url);
@@ -36,6 +40,10 @@ async function checkWeather(city) {
     description.innerText = weather.weather[0].description;
     wind.innerText = weather.wind.speed;
     humid.innerText = weather.main.humidity;
+    timeZone.innerText = weather.timezone
+    long.innerText = weather.coord.lon
+    lat.innerText = weather.coord.lat
+
   } catch (error) {
     console.error("Error fetching the weather data:", error);
   }
@@ -45,6 +53,6 @@ formsubmit.addEventListener("submit", function (event) {
   event.preventDefault();
   checkWeather(searchinput.value);
 
-  const name = document.getElementById("name");
+  const name = document.querySelector(".name");
   name.innerText = searchinput.value;
 });
